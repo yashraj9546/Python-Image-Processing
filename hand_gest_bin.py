@@ -39,17 +39,17 @@ def classify_gesture(hand_landmarks):
         ])
 
         if open_palm:
-            return "open palm"
+            return "Open palm"
         elif closed_palm:
-            return "closed palm"
+            return "Closed palm"
         elif (thumb_tip.x < index_tip.x)and (thumb_tip.y < index_tip.y):
-            return "thumbs up"
+            return "Thumbs up"
         elif (index_tip.x > middle_tip.x)and (thumb_tip.y > index_tip.y):
-            return "peace sign"
+            return "Peace sign"
         elif (middle_tip.x < thumb_tip.x) and (middle_tip.y < thumb_tip.y):
-            return "FUCK YOU TOO BITCH"
+            return "FU*K"
         elif (index_tip.x < middle_tip.x) and (index_tip.y < middle_tip.y):
-            return "DESI KALLU FUCK"
+            return "Total Dude"
         else:
             return "unrecognized"
 
